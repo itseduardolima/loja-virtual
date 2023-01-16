@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FutShop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--CABEÇALHO-->
+    <header>
+        <nav class="navbar navbar-expand-lg border-bottom">
+            <div class="container">
+                <a class="navbar-brand text-white" href="home.html">Futshop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page"
+                                href="cadastro.html">Cadastre-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="login.html">Entrar</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="O que está procurando?"
+                            aria-label="Search">
+                        <button class="btn btn-light">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--CARROSEL-->
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" data-interval="3000">
+                <div class="carousel-item active">
+                    <img src="img/slides/FullBanner-1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="img/slides/FullBanner-2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="img/slides/FullBanner-3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <hr>
+    </header>
+    <!--CONTÉUDO-->
+    <main class="mb-5 pb-5 mb-md-0">
+
+        <!--NAVEGAÇÃO-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                        <form class="ml-3 d-inline-block">
+                            <select class="form-select form-select-sm" aria-label="Disabled select example">
+                                <option selected>Ordernar por</option>
+                                <option value="1">Maior preço</option>
+                                <option value="2">Menor preço</option>
+                                <option value="3">Mais vendidos</option>
+                            </select>
+                        </form>
+                        <nav aria-label="Page navigation example" class="d-inline-block me-3">
+                            <ul class="pagination pagination-sm justify-content-end my-0">
+                                <li class="page-item"><a class="page-link disabled" href="home.html">1</a></li>
+                                <li class="page-item"><a class="page-link" href="pagina2.html">2</a></li>
+                                <li class="page-item"><a class="page-link" href="pagina3.html">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="pagina2.html">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-3">
+
+        <!--CARD COM PRODUTOS-->
+        <div class="container">
+            <div class="row g-3">
+
+                  <!--CARD ARSENAL-->
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center">
+                        <img src="img/camisas/arsenal.jpg" class="card-img-top" alt="camisa-arsenal">
+                        <div class="card-body">
+                            <h5 class="card-title">R$ 149,99</h5>
+                            <p class="card-text">Adidas Camisa II Arsenal 22/23 Futebol.</p>
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--CARD ATLÉTICO MADRID-->
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center">
+                        <img src="img/camisas/atletico-de-madrid.jpg" class="card-img-top" alt="camisa-atletico-madrid">
+                        <div class="card-body">
+                            <h5 class="card-title">R$ 169,99</h5>
+                            <p class="card-text">Camisa Atletico Madrid III Futebol 22/23.</p>
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--CARD BARCELONA-->
+                <div class=" col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center">
+                        <img src="img/camisas/barcelona.jpg" class="card-img-top" alt="camisa-barcelona">
+                        <div class="card-body">
+                            <h5 class="card-title">R$ 159,99</h5>
+                            <p class="card-text">Camisa Nike Barcelona II 22/23 Torcedor Pro - Masculina.</p>
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--CARD BAYER DE MUNIQUE-->
+                <div class="col-lg-3 col-md-4 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center">
+                        <img src="img/camisas/bayer.jpg" class="card-img-top" alt="camisa-bayer-de-muniquw">
+                        <div class="card-body">
+                            <h5 class="card-title">R$ 149,99</h5>
+                            <p class="card-text">Camisa Bayern de Munique III 22/23 Adidas - Masculina.</p>
+                            <form class="d-block">
+                                <button class="btn btn-primary">
+                                    Adicionar ao Carrinho
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3">
+
+            <!--NAVEGAÇÃO-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form class="ml-3 d-inline-block">
+                                <select class="form-select form-select-sm" aria-label="Disabled select example">
+                                    <option selected>Ordernar por</option>
+                                    <option value="1">Maior preço</option>
+                                    <option value="2">Menor preço</option>
+                                    <option value="3">Mais vendidos</option>
+                                </select>
+                            </form>
+                            <nav aria-label="Page navigation example" class="d-inline-block me-3">
+                                <ul class="pagination pagination-sm justify-content-end my-0">
+                                    <li class="page-item"><a class="page-link disabled" href="home.html">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="pagina2.html">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="pagina3.html">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="pagina2.html">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!--RODAPÉ-->
+    <footer class="border-top text-muted bg-light">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-12 col-md-4 text-center text-md-left">
+                    &copy; 2023 - FutShop <br>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="termos.html" class="text-decoration-none text-dark">Termos de Uso</a> <br>
+                    <a href="privacidade.html" class="text-decoration-none text-dark">Política de Privacidade</a>
+
+                </div>
+
+                <div class="col-12 col-md-4 text-center text-md-rigth">
+                    <a href="trocas.html" class="text-decoration-none text-dark">Trocas e Devoluções</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
