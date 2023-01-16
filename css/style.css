@@ -19,7 +19,19 @@
     background: var(--color-base);
 }
 
-/* MAIN */
+/* CARD */
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
 
 
 
