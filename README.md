@@ -17,4 +17,4 @@ Site de uma loja virtual com vendas de camisas de time.
 </div>
 
 ## Link
-<a href="https://itseduardolima.github.io/loja-virtual-responsivo/home.html">Acessar</a>
+<a href="https://itseduardolima.github.io/loja-virtual-responsiva/home.html">Acessar</a>
