@@ -2,8 +2,6 @@
 
 :root {
     --color-base: #3B82BF;
-    --color-brand:#011526;
-    --color-font: #0D0D0D;
     --font-base: "Bai Jamjuree";
 }
 
@@ -23,6 +21,7 @@
 
 .card-custom .card-custom-image {
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card-custom .card-custom-image img {
