@@ -17,6 +17,15 @@
     background: var(--color-base);
 }
 
+ion-icon {
+    padding-top: 10px;
+    color: white;
+    height: 30px;
+    width: 30px;
+    
+    
+}
+
 /* CARD */
 
 .card-custom .card-custom-image {
