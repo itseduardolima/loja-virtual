@@ -41,5 +41,18 @@ ion-icon {
     transform: scale(1.1);
 }
 
+/* CARRINHO */
+
+.order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
+
 
 
