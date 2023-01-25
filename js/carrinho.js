@@ -53,7 +53,7 @@ function addToCartCart(event) {
     newCartProduct.classList.add("cart-product")
 
     newCartProduct.innerHTML =
-    `
+`
     <li class="list-group-item py-3">
         <div class="row g-3">
             <div class="col-4 col-md-4 col-lg-4">
@@ -85,7 +85,7 @@ function addToCartCart(event) {
             </div>
         </div>
     </li>
-    `
+`
     const tableBody = document.querySelector(".container tbody")
     tableBody.append(newCartProduct)
     updateTotal()
