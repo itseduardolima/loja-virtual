@@ -30,12 +30,14 @@ function checkIfInputIsNull(event) {
 
 }
 
+// função para adicionar card no carrinho
 function addToCartCart(event) {
     const button = event.target
     const productInfos = button.parentElement.parentElement.parentElement
     const productImage = productInfos.getElementsByClassName("card-img-top")[0].src
     const productTitle = productInfos.getElementsByClassName("card-title")[0].innerText
     const productPrice = productInfos.getElementsByClassName("card-price")[0].innerText
+    
 
 
     const productCartName = document.getElementsByClassName("cart-title")
@@ -84,7 +86,7 @@ function addToCartCart(event) {
         </div>
     </li>
     `
-    const tableBody = document.querySelector(".carrinho tbody")
+    const tableBody = document.querySelector(".container tbody")
     tableBody.append(newCartProduct)
     updateTotal()
     newCartProduct.getElementsByClassName("product-qtd-input")[0].addEventListener("change", checkIfInputIsNull)
