@@ -43,6 +43,13 @@ ion-icon {
 
 /* CARRINHO */
 
+
+@media (min-width: 992px) {
+    .carrinho {
+        min-height: 100vh;
+    }
+
+}
 .order {
     display: flex;
     flex-direction: row;

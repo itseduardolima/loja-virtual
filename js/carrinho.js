@@ -63,27 +63,31 @@ function addToCartCart(event) {
                 <strong>${productTitle}</strong>
             </h6>
         </div>
+        <div class="text-start mt-2">
+            <small class="text-secondary cart-product-price">${productPrice}</small><br>
+        </div>
         <div
             class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
             <div class="input-group">
-                
-                <input type="number" class="form-control text-center border-dark rounded-3 product-qtd-input" value="1" min="0">
-            
-                <button class="btn btn-danger border-dark btn-sm ms-2 rounded-3 remove-product-button" type="button">
+
+                <input style="max-width: 50px;" class="form-control text-center border-dark rounded-3 product-qtd-input"
+                value="1" min="0" type="number">
+                </input>
+
+                <button
+                    class="btn btn-danger border-dark btn-sm ms-2 rounded-3 remove-product-button"
+                    type="button">
                     Remover
                 </button>
             </div>
-            <div class="text-end mt-2">
-                <small class="text-secondary cart-product-price">${productPrice}</small><br>
-            </div>
+            
         </div>
     </div>
 </li>
     `
-    const tablebody = document.querySelector(".container tbody")
-    tablebody.append(newCartProduct)
+    const tableBody = document.querySelector(".carrinho tbody")
+    tableBody.append(newCartProduct)
     updateTotal()
-
     newCartProduct.getElementsByClassName("product-qtd-input")[0].addEventListener("change", checkIfInputIsNull)
     newCartProduct.getElementsByClassName("remove-product-button")[0].addEventListener("click,", removeProduct)
 }
