@@ -56,6 +56,10 @@ ion-icon {
     justify-content: space-between;
 }
 
+.img-thumbnail {
+    height: 100px;
+}
+
 
 
 
